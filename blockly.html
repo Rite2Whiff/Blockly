@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Toolbox Customization Codelab</title>
+    <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+
+    <link rel="stylesheet" href="blockly.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body onload="start()">
+    <h1>BLOCKLY</h1>
+    <button type="button">Click here to run your code</button>
+
+    <div id="blocklyDiv"></div>
+    <xml
+      xmlns="https://developers.google.com/blockly/xml"
+      id="toolbox-categories"
+      style="display: none"
+    >
+      <category name="Custom">
+        <block type="block_type">
+          <field name="cartoonImage">Oggy</field>
+          <field name="color">Red</field>
+        </block>
+      </category>
+    </xml>
+
+    <div id="images">
+      <img src="" alt="blockly images" />
+    </div>
+
+    <script src="blockly.js"></script>
+  </body>
+</html>
